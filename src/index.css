@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, serif;
+}
+
+body {
+  width: 100%;
+  min-height: 90vh;
+  background-color: #3d30a2;
+  position: relative;
+}
+
+i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/*--------------------------*/
+.app-container {
+  margin: auto;
+  margin-top: 50px;
+  background-color: #1f263c;
+  color: white;
+  max-width: 530px;
+  border-radius: 5px;
+  padding: 20px 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  position: relative;
+  min-height: 300px;
+}
+
+h1 {
+  margin: 15px 0 20px 0;
+}
+
+.input-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+}
+
+.input-items input {
+  width: 73%;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: green;
+  appearance: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+button:active {
+  background-color: green;
+}
+.todoList-container {
+  width: 100%;
+  margin-top: 30px;
+  list-style: none;
+}
+
+li {
+  color: white;
+  padding: 10px 15px 15px;
+  margin: 18px 0;
+  font-size: 1.1rem;
+  background-color: #3d30a2;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.completed {
+  font-style: italic;
+  color: grey;
+  text-decoration: line-through;
+}
+
+li .fa-trash {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: white;
+  transition: 0.3s;
+}
+
+li .fa-trash:hover {
+  color: tomato;
+}
+
+.removeAll {
+  position: absolute;
+  left: 55px;
+  bottom: 25px;
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.removeAll i {
+  margin-left: 6px;
+  position: relative;
+  top: 2px;
+}
+
+.removeAll:hover {
+  color: tomato;
+}
+
+@media only screen and (max-width: 530px) {
+  body {
+    background-color: #1f263c;
+  }
+  .app-container {
+    margin-top: 0;
+    padding: 20px 20px;
+    padding-bottom: 50px;
+  }
+
+  .input-items input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+  }
+
+  .todoList-container {
+    margin-top: 90px;
+  }
+
+  .removeAll {
+    left: 25px;
+  }
+  button {
+    width: 100%;
+  }
+}
