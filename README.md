@@ -1,7 +1,5 @@
 # Todo List | React JS
 
-### 87/100 Projects By CodeBustler
-
 ## Tech Stack
 
 React JS, CSS
@@ -10,11 +8,9 @@ React JS, CSS
 
 https://todo-list-react-cb.netlify.app/
 
-## Features
-
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://i.postimg.cc/QtvskQVH/screenshot.png)
 
 ## 🔗 Links
 
